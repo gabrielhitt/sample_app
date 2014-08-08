@@ -36,7 +36,7 @@ describe "Static pages" do
     
     it "should have the h1 'About Us'" do
       visit '/static_pages/about'
-      
+      page.should have_content('About Us')
     end
   end
 
